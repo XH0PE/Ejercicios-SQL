@@ -1,21 +1,21 @@
 
-    -- ? CREATE DATABASE ---> (Para crear una base de datos)
+    -- * CREATE DATABASE ---> (Para crear una base de datos)
 
     CREATE DATABASE <db>;
 
-    -- ? SHOW DATABASES ---> (Para visualizar las bases de datos)
+    -- * SHOW DATABASES ---> (Para visualizar las bases de datos)
 
     SHOW DATABASES;
 
-    -- ? USE ---> (Para hacer uso de una base de datos)
+    -- * USE ---> (Para hacer uso de una base de datos)
 
     USE <db>;
 
-    -- ? SHOW TABLES ---> (Para visualizar las tablas creadas en la base de datos usada)
+    -- * SHOW TABLES ---> (Para visualizar las tablas creadas en la base de datos usada)
 
     SHOW TABLES;
 
-    -- ? CREATE TABLE ---> (Para crear una tabla dentro de una base de datos) - Sintaxis
+    -- * CREATE TABLE ---> (Para crear una tabla dentro de una base de datos) - Sintaxis
 
     CREATE TABLE <table>(
         ind INT,
@@ -27,11 +27,11 @@
         creado TIMESTAMP
     );
 
-    -- ? DESC <table> ---> (Para analizar cómo está creada la tabla)
+    -- * DESC <table> ---> (Para analizar cómo está creada la tabla)
 
-    DESC prendices;
+    DESC aprendices;
 
-    -- ? DROP TABLE ---> (Para eliminar la tabla )
+    -- * DROP TABLE ---> (Para eliminar la tabla )
 
     DROP TABLE estudiantes;
 
@@ -44,7 +44,7 @@
     creado TIMESTAMP
     );
 
-    -- ? new Table - new Sintaxis
+    -- * new Table - new Sintaxis
 
     -- * LA PRIMERA LINEA : id IN AUTO_INCREMENT PRIMARY KEY: Se va incrementar el Id y va hacer la key primaria
 
@@ -54,7 +54,7 @@
 
     -- * LA CUARTA LINEA: Estado ENUM ("Activo”, “Inactivo") DEFAULT "Inactivo", Para que cualquiera de las dos quede por defecto.
 
-    -- TODO - Sintaxis
+    -- * TODO - Sintaxis
 
     CREATE TABLE aprendices(
         id INT AUTO_INCREMENT PRIMARY KEY,
@@ -65,7 +65,7 @@
         creado TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     );
 
-    -- ? INSERT INTO <table> (columnas) VALUES ---> (Para insertar datos en las tablas)
+    -- * INSERT INTO <table> (columnas) VALUES ---> (Para insertar datos en las tablas)
 
     -- * Ejemplo INSERT INTO <tabla> ('Columna1','Columna2','Columna3',...)
 
